@@ -30,7 +30,7 @@ class StdOutListener(StreamListener):
                 self.dataJson =simplejson.loads(data[:-1])
                 self.dataJsonText = self.dataJson["text"].lower()
                 self.count += 1
-                if "hey" in self.dataJsonText:
+                if "elclasico" in self.dataJsonText:
                     print self.dataJsonText
 
             else:
