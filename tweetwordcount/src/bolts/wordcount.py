@@ -17,10 +17,7 @@ class WordCounter(Bolt):
 
         # Increment the local count
         self.counts[word] += 1
-        #self.emit([word, self.counts[word]])
-
-        # Log the count - just to see the topology running
-        #self.log('%s: %d' % (word, self.counts[word]))
+        
 
         # Write codes to increment the word count in Postgres
         # Use psycopg to interact with Postgres
