@@ -1,5 +1,5 @@
 """
-Using Twitter stream API, print all the tweets in the stream containing the term "Hello" in a 1 min period
+Using Twitter stream API, print all the tweets in the stream containing the term "elclasico" in a 1 min period
 
 """
 from tweepy.streaming import StreamListener
