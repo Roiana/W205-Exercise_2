@@ -22,7 +22,7 @@ sparse quickstart tweetwordcount
 
 #Changing working directory to the "tweetwordcount" folder
 cd /root/ex2/tweetwordcount
-
+ 
 #Removing obsolete files from the "tweetwordcount" folder and copying
 #the pertinent files from the cloned Github Repository for this exercise
 rm config.json
