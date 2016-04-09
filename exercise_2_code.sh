@@ -52,7 +52,10 @@ cp /root/ex2/W205-Exercise_2/tweetwordcount/virtualenvs/tweetwordcount.txt /root
 cp /root/ex2/W205-Exercise_2/Twittercredentials.py /root/ex2
 cp /root/ex2/W205-Exercise_2/hello-stream-twitter.py /root/ex2
 cp /root/ex2/W205-Exercise_2/psycopg-sample.py /root/ex2
-cp /root/ex2/W205-Exercise_2/tweetwordcount/src/crdbta.py /root/ex2/tweetwordcount/src
+cp /root/ex2/W205-Exercise_2/tweetwordcount/crdbta.py /root/ex2/tweetwordcount
+cp /root/ex2/W205-Exercise_2/serve_scripts/finalresults.py /root/ex2/tweetwordcount
+cp /root/ex2/W205-Exercise_2/serve_scripts/histogram.py /root/ex2/tweetwordcount
+cp /root/ex2/W205-Exercise_2/serve_scripts/barchart.py /root/ex2/tweetwordcount
 
 #Installing Tweepy
 pip install tweepy
@@ -70,13 +73,13 @@ sparse run
 #Running a Python script which queries the Postgres database and return the
 #number of times a specific word occurs in the stream or returns the number of
 #times all the words in a stream occurs.
-python /root/ex2/W205-Exercise_2/serve_scripts/finalresults.py
-python /root/ex2/W205-Exercise_2/serve_scripts/finalresults.py hello
+python finalresults.py
+python finalresults.py hello
 
 #Running a Python script which returns all the words that their total number
 #of occurences in the stream is within certain bounds.
-python /root/ex2/W205-Exercise_2/serve_scripts/histogram.py 3,8
+python histogram.py 3,8
 
 #Running a Python script which counts the top 20 words in my twitter stream.
-python /root/ex2/W205-Exercise_2/serve_scripts/barchart.py
+python barchart.py
 
